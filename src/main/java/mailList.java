@@ -37,7 +37,7 @@ public class mailList extends HttpServlet {
             action="join";
         }
         if(action.equals("join")) {
-            url="/index.html";
+            url="/baitap1.html";
         }
         else if(action.equals("add")) {
             String firstName=request.getParameter("firstName");

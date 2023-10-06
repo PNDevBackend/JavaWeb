@@ -39,7 +39,7 @@
     </p></li>
 </ul>
 <p>To enter another email address, click on back button in your browser or the return button show below </p>
-<form action="5.1.html" method="get">
+<form action="baitap1.html" method="get">
     <input type="hidden" name="action" value="join">
     <input type="submit" value="Return" class="btn btn-primary">
     <input type="submit" value="Home" class="btn btn-success">

@@ -1,14 +1,17 @@
+import java.io.Serial;
 import java.io.Serializable;
 
 public class User implements Serializable {
     /**
      *
      */
+    @Serial
     private static final long serialVersionUID = 1L;
     private String firstName;
     private String lastName;
     private String email;
     private String dateOfBirth;
+
 
     public User(String firstName, String lastName, String email, String dateOfBirth) {
         this.firstName = firstName;

@@ -41,7 +41,7 @@ public class mailList extends HttpServlet {
             action="join";
         }
         if(action.equals("join")) {
-            url="/baitap1.html";
+            url="/4.1+6.2.html";
         }
         else if(action.equals("add")) {
             String firstName=request.getParameter("firstName");
@@ -50,7 +50,7 @@ public class mailList extends HttpServlet {
             String dateOfBirth=request.getParameter("dateOfBirth");
             User user=new User(firstName,lastName,email,dateOfBirth);
             request.setAttribute("user", user);
-            url="/thanks.jsp";
+            url="/4.1+6.2.jsp";
             getServletContext().getRequestDispatcher(url).forward(request, response);
             System.out.println("User Email: " + user.getEmail());
             System.out.println("User FirstName: " + user.getFirstName());
@@ -58,6 +58,8 @@ public class mailList extends HttpServlet {
             System.out.println("User DateOfBirth: " + user.getDateOfBirth());
 
         }
+
+
 
     }
 

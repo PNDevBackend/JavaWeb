@@ -18,7 +18,6 @@
   <servlet>
   	<servlet-name>TestServlet</servlet-name>
   	<display-name>TestServlet</display-name>
-  	<description></description>
   	<servlet-class>TestServlet</servlet-class>
   </servlet>
 

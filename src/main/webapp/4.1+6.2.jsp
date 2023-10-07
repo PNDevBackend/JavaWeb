@@ -37,12 +37,31 @@
     <li><p><b>Date of birth:</b>
         <%= request.getParameter("dateOfBirth")%>
     </p></li>
+    <li><p><b>HeardFrom:</b>
+        <%= request.getParameter("heardFrom")%>
+    </p></li>
+    <li><p><b>Do you like this club?</b>
+        <%= request.getParameter("announce")%>
+    </p></li>
+    <li><p><b>Contact via:</b>
+        <%= request.getParameter("contactMethod")%>
+    </p></li>
 </ul>
 <p>To enter another email address, click on back button in your browser or the return button show below </p>
-<form action="baitap1.html" method="get">
+<form action="4.1+6.2.html" method="post" id="myForm">
     <input type="hidden" name="action" value="join">
     <input type="submit" value="Return" class="btn btn-primary">
-    <input type="submit" value="Home" class="btn btn-success">
+    <input type="submit" value="Home" class="btn btn-success" onclick="goToHomePage()">
 </form>
+<script>
+    function goToHomePage(){
+        document.getElementById("myForm").action="index.html"
+        document.getElementById("myForm").submit();
+
+    }
+</script>
+
+
+
 </body>
 </html>

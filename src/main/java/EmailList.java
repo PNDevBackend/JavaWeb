@@ -42,7 +42,7 @@ public class EmailList extends HttpServlet {
             action="join";
         }
         if(action.equals("join")) {
-            url="/5.1.html";
+            url="/5.1+6.1+8.1.jsp";
         }
         else if(action.equals("add")) {
             String firstName=request.getParameter("firstName");
